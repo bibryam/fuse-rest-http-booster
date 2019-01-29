@@ -105,3 +105,14 @@ $ mvn clean package
 $ mvn spring-boot:run
 ----
 . Go to link:http://localhost:8080[] and then follow the instructions on that page.
+
+
+
+
+swagger-codegen generate -i http://petstore.swagger.io/v2/swagger.json -l ruby -o
+
+mvn camel-restdsl-swagger:generate
+mvn spring-boot:run
+
+http://localhost:8080
+http://localhost:8080/camel/v2/store/inventory
